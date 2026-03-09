@@ -19,5 +19,5 @@ class Task:
         }
     
     def __str__(self):
-        status = "✓" if self.completed else "x"
-        return f"[{status}] {self.id}: {self.title} | [{self.priority}] | {self.dueDate}"
+        status = "✓" if self.completed else " "
+        return f"{self.id:<4}{status:<8}{self.priority:<10}{self.dueDate:<12}{self.title}"
