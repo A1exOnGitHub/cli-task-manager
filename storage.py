@@ -19,6 +19,7 @@ class Storage:
                     task = Task(
                         item["id"],
                         item["title"],
+                        item["priority"],
                         item["completed"],
                     )
                     tasks[item["id"]] = task

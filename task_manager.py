@@ -7,8 +7,8 @@ class TaskManager:
         self.tasks = self.storage.load_tasks()
         self.next_id = max(self.tasks.keys(), default = 0) + 1
 
-    def add_task(self, title):
-        task = Task(self.next_id, title)
+    def add_task(self, title, priority):
+        task = Task(self.next_id, title, priority)
         self.tasks[self.next_id] = task
         self.next_id += 1
         return task
