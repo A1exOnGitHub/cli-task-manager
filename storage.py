@@ -20,6 +20,7 @@ class Storage:
                         item["id"],
                         item["title"],
                         item["priority"],
+                        item["dueDate"],
                         item["completed"],
                     )
                     tasks[item["id"]] = task

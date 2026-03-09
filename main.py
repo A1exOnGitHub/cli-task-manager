@@ -26,7 +26,8 @@ def main():
         elif choice == "2":
             title = input("Enter task title: ")
             priority = input("Enter task priority (LOW/MED/HIGH): ")
-            manager.add_task(title, priority)
+            dueDate = input("Enter task due date (mm/dd/yy): ")
+            manager.add_task(title, priority, dueDate)
             manager.save()
             print("Task added.")
 
